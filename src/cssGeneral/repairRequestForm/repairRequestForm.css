@@ -1,0 +1,314 @@
+/* Estilos para RepairRequestForm con colores Bootstrap y layout ancho */
+
+.repair-form-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+  display: block;
+  padding: 0;
+}
+
+.repair-form-card {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+  border: none;
+}
+
+.repair-form-card-img-top {
+  width: 100vw;
+  height: 260px;
+  overflow: hidden;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.repair-form-hero-img {
+  width: 100vw;
+  height: 100%;
+  max-height: 260px;
+  object-fit: cover;
+  object-position: center 30%;
+  filter: brightness(0.97) contrast(1.04);
+}
+
+.repair-form-hero-overlay {
+  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  background: #0093c4;
+  padding: 1rem 1.2rem 0.7rem 1.2rem;
+  text-align: center;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.repair-form-hero-title h1 {
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 2.7rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.repair-form-hero-link {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 800;
+  transition: color 0.2s;
+}
+.repair-form-hero-link:hover {
+  color: #b6d4fe;
+}
+
+.repair-form-hero-icon {
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+
+.repair-form-hero-desc {
+  color: #e3e6ea;
+  font-size: 1.1rem;
+  opacity: 0.95;
+  margin-top: 0.2rem;
+}
+
+.repair-form-card-body {
+  padding: 0;
+}
+
+.repair-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  background: transparent;
+  padding: 1.2rem 0.5rem;
+}
+
+.repair-form-col-lg-6 {
+  flex: 1 1 45%;
+  min-width: 320px;
+  max-width: 600px;
+  margin-bottom: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  background: rgba(10, 88, 202, 0.15);
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.04);
+  padding: 1.1rem 0.7rem;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.repair-form-col-12 {
+  flex: 1 1 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.repair-form-mt-3 {
+  margin-top: 1.5rem;
+}
+
+.repair-form-p-4 {
+  padding: 0;
+}
+
+.repair-form-section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: rgba(13,110,253,0.25);
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.repair-form-section-icon {
+  font-size: 1.2em;
+}
+
+.repair-form-form-label {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.1rem;
+  display: block;
+}
+
+.repair-form-label-hint {
+  color: #b6d4fe;
+  font-size: 0.95em;
+  margin-left: 0.5em;
+}
+
+.repair-form-input {
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #b6d4fe;
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color 0.2s;
+  width: 100%;
+  margin-bottom: 0.15rem;
+  color: #0a2540;
+  box-sizing: border-box;
+}
+
+.repair-form-input:focus {
+  border-color: #0d6efd;
+  outline: none;
+  background: #f0f6ff;
+}
+
+.repair-form-btn {
+  background: linear-gradient(90deg, #0d6efd 60%, #0a58ca 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.repair-form-btn:hover {
+  background: linear-gradient(90deg, #0a58ca 60%, #0d6efd 100%);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.repair-form-alert {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 500;
+  border: 1px solid #b6d4fe;
+}
+
+@media (max-width: 1100px) {
+  .repair-form-hero-overlay {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .repair-form-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.2rem 0.5rem;
+  }
+  .repair-form-col-lg-6 {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 1.2rem 0.7rem;
+  }
+  .repair-form-card-img-top {
+    height: 140px;
+  }
+  .repair-form-hero-img {
+    max-height: 140px;
+  }
+}
+
+@media (max-width: 600px) {
+  html, body, .repair-form-bg, .repair-form-card, .repair-form-card-img-top, .repair-form-hero-img, .repair-form-hero-overlay, .repair-form-row, .repair-form-col-lg-6, .repair-form-input {
+    max-width: 100vw !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  .repair-form-row {
+    gap: 0.05rem;
+    padding: 0.05rem 0.05rem;
+  }
+  .repair-form-col-lg-6 {
+    padding: 0.1rem 0.05rem;
+    margin-bottom: 0.08rem;
+  }
+  .repair-form-section-title {
+    margin-bottom: 0.28rem;
+    margin-top: 0.18rem;
+    padding: 0.13rem 0.22rem;
+    letter-spacing: 1px;
+  }
+  .repair-form-form-label {
+    margin-bottom: 0.22rem;
+    letter-spacing: 0.5px;
+    font-size: 1.01rem;
+  }
+  .repair-form-input {
+    margin-bottom: 0.01rem;
+    padding: 0.45rem 0.6rem;
+  }
+  textarea.repair-form-input {
+    min-height: 60px;
+  }
+}
+
+@media (min-height: 700px) {
+  .repair-form-card-img-top {
+    height: 30vh;
+    min-height: 180px;
+    max-height: 320px;
+  }
+  .repair-form-hero-img {
+    max-height: 30vh;
+    min-height: 180px;
+    object-fit: cover;
+  }
+  .repair-form-hero-overlay {
+    min-height: 15vh;
+    max-height: 180px;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .repair-form-row {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+  .repair-form-col-lg-6 {
+    min-height: 20vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+}
+
+@media (min-width: 900px) {
+  .repair-form-card-img-top {
+    height: 320px;
+  }
+  .repair-form-hero-img {
+    max-height: 320px;
+    object-fit: cover;
+    object-position: center 25%;
+  }
+} 

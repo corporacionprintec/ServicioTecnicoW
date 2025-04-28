@@ -1,0 +1,103 @@
+.status-update-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+  width: 100%;
+  transition: box-shadow 0.2s;
+}
+
+.status-update-card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: #2c3e50;
+}
+
+.status-update-btn-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.status-update-btn {
+  background: #f5f6fa;
+  border: 1px solid #d1d8e0;
+  color: #34495e;
+  border-radius: 6px;
+  padding: 0.5rem 1.1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.status-update-btn.selected, .status-update-btn:active {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+.status-update-btn:hover {
+  background: #eaf1fb;
+  color: #007bff;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  border-radius: 1em;
+  font-size: 0.95em;
+  font-weight: 600;
+  margin-left: 0.5em;
+  background: #e1eaff;
+  color: #2c3e50;
+}
+.status-badge.pendiente {
+  background: #ffe5e5;
+  color: #c0392b;
+}
+.status-badge.diagnosticado {
+  background: #eafbe5;
+  color: #27ae60;
+}
+.status-badge.entregado {
+  background: #e5f7ff;
+  color: #2980b9;
+}
+.status-badge.abandono {
+  background: #fff6e5;
+  color: #e67e22;
+}
+
+.status-slider-container {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.status-slider-label {
+  font-size: 1rem;
+  color: #555;
+}
+.status-slider {
+  flex: 1;
+  accent-color: #007bff;
+}
+
+@media (max-width: 600px) {
+  .status-update-card {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    max-width: 100%;
+  }
+  .status-update-btn-group {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .status-slider-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+} 

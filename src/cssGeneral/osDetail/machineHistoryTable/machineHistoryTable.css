@@ -1,0 +1,50 @@
+/* Estilos personalizados para MachineHistoryTable (antes Bootstrap) */
+
+.mht-section {
+  margin-top: 1.5rem;
+}
+.mht-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a4d7c;
+  margin-bottom: 0.7rem;
+}
+.mht-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  color: #1a4d7c;
+  font-size: 0.98rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 1px 4px rgba(26,77,124,0.07);
+}
+.mht-table th, .mht-table td {
+  padding: 0.7em 0.9em;
+  border: 1.5px solid #e3e8ee;
+  text-align: left;
+}
+.mht-table th {
+  background: #f5faff;
+  font-weight: 600;
+  color: #265d97;
+}
+.mht-table tr:nth-child(even) {
+  background: #f8fbff;
+}
+.mht-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 0.35em 0.9em;
+  font-size: 0.97rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.18s, box-shadow 0.18s, transform 0.15s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  background: linear-gradient(90deg, #36d1c4 0%, #5b86e5 100%);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
+.mht-btn:active { transform: scale(0.97); }
+.mht-btn:disabled { opacity: 0.6; cursor: not-allowed; } 
