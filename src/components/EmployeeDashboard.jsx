@@ -254,7 +254,7 @@ function TechnicianDashboard() {
               </select>
               <select className="ed-select" value={filterTipoServicio} onChange={e => setFilterTipoServicio(e.target.value)}>
                 <option value="">Ver ubicaciones</option>
-                {tipoServicioOptions.map(opt => <option key={opt.value} value={opt.value}>Ver ubicaciones</option>)}
+                {tipoServicioOptions.map(opt => <option key={opt.value} value={opt.value}>{opt.label}</option>)}
               </select>
               <button className="ed-btn ed-btn-red" onClick={() => setShowEliminados(!showEliminados)}>
                 🗑️ Ver eliminados
